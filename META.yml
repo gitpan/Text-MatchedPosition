@@ -16,7 +16,7 @@ name: Text-MatchedPosition
 provides:
   Text::MatchedPosition:
     file: lib/Text/MatchedPosition.pm
-    version: 0.01
+    version: 0.02
 requires:
   Carp: 0
   Class::Accessor::Lite: 0
@@ -28,4 +28,4 @@ resources:
   bugtracker: http://github.com/bayashi/Text-MatchedPosition/issues
   license: http://dev.perl.org/licenses/
   repository: http://github.com/bayashi/Text-MatchedPosition
-version: 0.01
+version: 0.02

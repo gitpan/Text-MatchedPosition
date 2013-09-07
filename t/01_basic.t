@@ -81,4 +81,19 @@ _TEXT_
     is $pos->offset, 1, 'offset';
 }
 
+# blank line
+{
+    my $text = <<'_TEXT_';
+0123
+
+jk
+_TEXT_
+
+    my $regex = qr/jk/;
+
+    my $pos = Text::MatchedPosition->new(\$text, $regex);
+    is $pos->line, 3, 'line';
+    is $pos->offset, 1, 'offset';
+}
+
 done_testing;
