@@ -27,7 +27,6 @@
       "runtime" : {
          "requires" : {
             "Carp" : "0",
-            "Class::Accessor::Lite" : "0",
             "perl" : "5.008001",
             "strict" : "0",
             "utf8" : "0",
@@ -38,7 +37,7 @@
    "provides" : {
       "Text::MatchedPosition" : {
          "file" : "lib/Text/MatchedPosition.pm",
-         "version" : "0.02"
+         "version" : "0.03"
       }
    },
    "release_status" : "stable",
@@ -53,5 +52,5 @@
          "url" : "http://github.com/bayashi/Text-MatchedPosition"
       }
    },
-   "version" : "0.02"
+   "version" : "0.03"
 }

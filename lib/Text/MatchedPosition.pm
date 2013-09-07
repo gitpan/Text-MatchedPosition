@@ -2,11 +2,8 @@ package Text::MatchedPosition;
 use strict;
 use warnings;
 use utf8;
-use Class::Accessor::Lite (
-    ro => [qw/text regex/],
-);
 
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 
 sub new {
     my ($class, $text, $regex) = @_;
@@ -23,6 +20,10 @@ sub new {
 
     bless $args, $class;
 }
+
+sub text { $_[0]->{text} }
+
+sub regex { $_[0]->{regex} }
 
 sub line {
     my $self = shift;
@@ -106,6 +107,14 @@ If regex is no match, C<line> to be C<undef>.
 return the count of offset number. The beginning is C<1>;
 
 If regex is no match, C<offset> to be C<undef>.
+
+=head2 text
+
+getter for text lines
+
+=head2 regex
+
+getter for regex
 
 
 =head1 REPOSITORY

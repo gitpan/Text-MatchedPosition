@@ -20,7 +20,6 @@ my $builder = Module::Build->new(
         'warnings' => 0,
         'utf8' => 0,
         'Carp' => 0,
-        'Class::Accessor::Lite' => 0,
     },
     add_to_cleanup      => [ 'Text-MatchedPosition-*' ],
     meta_merge     => {
